@@ -1,0 +1,370 @@
+* {
+	margin:0;
+	padding:0;
+	/* Сброс настроек. не знаю почему в HTMLAcademy  этому не учили, может, считают что рано ещё...*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1240px;
+    font-family: "aleo regular", "Myriad Pro", "Arial", serif;
+	/*
+	aleo regular
+	aleo light
+	aleo bold
+	
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: normal;
+	*/
+    font-size: 16px;
+    line-height: 30px;
+	font-weight: normal;
+	color: #b9b9b9;	
+    /*color: #ebebeb;	*/
+    background-color: white;
+}
+
+.container {
+    width: 1220px;
+    margin: 0 auto;
+	border: 1px solid red;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h3 {
+	color: #3b3b3b;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 30px;
+}
+
+.headerline {  
+  padding: 40px 50px 30px 50px;   
+}
+
+.header-logo {
+	float: left;	
+	width: 82px;
+	height: 28px;		
+}
+
+.header-logo img {
+	width: 82px;
+	height: 28px;
+}
+
+.header-nav {
+	width: 465px;
+	padding: 0;
+	margin: 0;	
+	list-style: none;	
+	float: right;
+}
+
+.header-nav li {		
+	float: left;
+	margin-right: 50px;
+}
+
+.header-nav li:last-child {
+	margin-right: 0;
+}
+
+.header-nav a {
+    text-decoration: none;
+	font-size: 14px;	
+	line-height: 38px;		
+	color: #3b3b3b;
+}
+
+.headerbottom {
+    /*width: 1509px;
+    height: 1006px;
+    ??? почему именно без ширины и с минимальной высотой?    */
+	position: relative;
+    min-height: 570px;
+	color: #ffffff;		
+	background-color: #4b4a45; 	
+	background-image: url("../img/bckgr-top.jpg");		
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;		
+	z-index: 5;
+}
+
+.headerbottom:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #4b4a45;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.headerbottom:hover:before {
+	opacity: 0;
+}
+
+.header-title-main {	
+/* HTMLAcademy: "Для строчных элементов лучше не задавать вертикальных отступов, т.к. они ведут себя непредсказуемо"
+И ага, был дурацкий вертикальный отступ между блоками. пока я не занулила все маргины и паддинги, т.е. это отступ от <p> козлил
+но это с подачи HTMLAcademy я верстаю на строчных, а не на дивах!!! На дивах предсказуемо было бы.*/
+	padding-top: 230px;
+    text-align: center;
+}
+
+.header-title-under {	
+    text-align: center;
+}
+
+.header-title-under:before,
+.header-title-under:after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 1px;
+	background: #dfdfdf;		
+}
+
+
+.menu-flag {
+	min-width: 1240px;
+	/* ??? надо всё равно разобраться, что это за отрывание справа...*/
+	padding: 0;
+    margin: 0 auto;
+	position: relative;
+	/*border: 1px solid blue;*/
+}
+
+.menu-flag-title {
+	position: absolute;
+	top: 13px;
+	left: 580px;
+	text-align:center;
+	vertical-align: middle;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+
+.dishes-list {
+	padding-left: 10px;
+	float: left;	
+	/* флоат тут стоит для клеарфикса на этом же классе в html, но чертов клеарфикс все равно почему-то не срабатывает!
+	 зато срабатывает у кнопки ниже*/
+	 margin-bottom: 40px;
+}
+
+.dishes-item {
+	float: left;
+	margin-left: 120px;
+	margin-top: 40px;
+	width: 420px;
+	/*border: 1px solid blue;*/
+}
+
+.dish-price:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 160px;
+	height: 1px;
+	margin-right: 15px;
+	background: #b7b7b7;		
+}
+
+.dish-price {
+	float: right;
+}
+
+.dishes-item  a {
+	text-decoration: none;
+	color: #515151;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+a .dish-consist {
+	text-decoration: none;
+	color: #b7b7b7;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.dishes-item  a:hover {
+	text-decoration: underline;
+}
+
+.dishes-item  a:active {
+	text-decoration: none;
+	color: #202020;
+}
+
+a:active .dish-consist {
+	color: #404040;
+}
+
+ .btn-load-more {
+ 	display: block;;
+ 	width: 120px;
+ 	clear: both;
+ 	padding: 8px 16px;
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	border: 1px solid #d7d7d7; 	
+ }
+
+ .btn-load-more:hover {
+ 	color: #979797;
+ 	border-color: #b5b5b5; 
+ }
+
+ .dishes-list-more {
+	padding-left: 10px;
+	float: left;	
+	margin-bottom: 20px;
+	display: none;
+	/*если его и можно открыть селекторами - то надо как-то использовать селектор "следующий элемент в вёрстке"*/
+ }
+
+
+.slider-features {
+	margin-top: 120px;
+}
+
+.features-header {
+	float: left;
+	margin-bottom: 40px;
+}
+
+.features-header:after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 160px;
+	height: 1px;
+	margin-left: 15px;
+	background: #b7b7b7;	
+}
+
+.slider-dots {
+	float: right;		
+}
+
+.slider-dots li {
+	display: inline-block;
+	float: left;	
+	list-style: none;
+	font-size: 40px;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 10px; 
+}
+
+.slider-dots .active {
+	color: #3b3b3b;
+}
+
+.feature-dishes{
+	float: left;
+}
+
+.feature-item {
+	float: left;
+	width: 230px;
+	margin-right: 100px;
+	position: relative;
+	color: #515151;
+}
+
+.feature-item:last-child {
+	margin-right: 0;
+}
+
+.feature-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 230px;
+	height: 200px;
+	background-color: #78696b;
+	background-repeat: no-repeat;
+}
+
+
+.feat21::before {
+	background-image: url("../img/feat21.png");
+}
+
+.feat22::before {
+	background-image: url("../img/feat22.png");
+}
+
+.feat23::before {
+	background-image: url("../img/feat23.png");
+}
+
+.feat24::before {
+	background-image: url("../img/feat24.png");
+}
+
+.feature-title{
+	margin-top: 220px;
+	float: left;
+}
+
+.feature-price{
+	margin-top: 220px;	
+	float: right;
+}
+
+.feature-item::after {
+	content: "";
+	position: absolute;
+	top: 240px;
+	left: -10px;
+	height: 40px;
+	width: 150px;	
+	background-image: url("../img/stars-sprite.png");
+	background-repeat: no-repeat;
+}
+
+.stars-one::after {
+	background-position: 0 0;
+}
+.stars-two::after {
+	background-position: 0 -45px;
+}
+.stars-three::after {
+	background-position: 0 -80px;
+}
+.stars-four::after {
+	background-position: 0 -115px;
+}
+.stars-five::after {
+	background-position: 0 -152px;
+}
+
+
+.gallery {
+	margin-top: 120px;
+	float: left;
+}
+
+.bottom {
+	margin-top: 120px;
+	float: left;
+}
