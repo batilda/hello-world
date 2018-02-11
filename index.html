@@ -5,6 +5,7 @@
 	<title>resto</title>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	<link rel="stylesheet" href="css/style.css">	
+	<script src="js/script.js"></script>
   </head>
   <body>
     <div class="headertop">
@@ -122,7 +123,7 @@
     </div>	  
     <div class="slider-features">
     	<div class="container">
-		  <h3 class="features-header">FEATURED DISHES</h3>
+		  <h3 class="section-header">FEATURED DISHES</h3>
 		  <ul class="slider-dots">
 		  	<li class="slider-dot-1">&bull;</li>
 		  	<li class="slider-dot-2 active">&bull;</li>
@@ -151,44 +152,62 @@
 	</div>
 	<div class="gallery">
 	  <div class="container">
-	    <h3>THE GALLERY</h3>
+	    <h3 class="section-header">THE GALLERY</h3>
 	    <div class="gallery-images">
-  	      <p>--- nice RESTO image-link must be here --- </p>
-  		  <p>--- nice RESTO image-link must be here --- </p>
-		  <p>--- nice RESTO image-link must be here --- </p>
-		  <p>--- nice RESTO image-link must be here --- </p>
-		  <p>--- nice RESTO image-link must be here --- </p>
+	    	<a class="gallery-href" href="#gallery-1">
+	    		<div class="gallery-image gallery-image-1">gallery-image-1
+	    		</div>	
+	    	</a>
+			<a class="gallery-href" href="#gallery-2">
+	    		<div class="gallery-image gallery-image-2">gallery-image-2
+	    		</div>	
+	    	</a>
+	    	<a class="gallery-href" href="#gallery-3">
+	    		<div class="gallery-image gallery-image-3">gallery-image-3
+	    		</div>	
+	    	</a>	    		    	
+ 			<a class="gallery-href" href="#gallery-4">
+	    		<div class="gallery-image gallery-image-4">gallery-image-4
+	    		</div>	
+	    	</a>
+	    	<a class="gallery-href" href="#gallery-5">
+	    		<div class="gallery-image gallery-image-5">gallery-image-5
+	    		</div>	
+	    	</a>	    		    	
+
         </div>
 	  </div>
 	</div>
 	<div class="bottom">
 	 <div class="container">
-	  <div class="bottom-column address-NY">
-  	    <p class="address-city">New York Restaurant</p>
-		<p>3926 Anmoore Road</p>
-		<p>New York, NY 10014</p>
-		<p class="address-phone">718-749-1714</p>
-	  </div>
-  	  <div class "bottom-column address-Paris">
-  	    <p class="address-city">France Restaurant</p>
-		<p>68, rue de la Couronne</p>
-		<p>75002 PARIS</p>
-		<p class="address-phone">02.94.23.69.56</p>
-	  </div>
-	  <div class="bottom-column bottom-links">
-	    <ul>
-		  <li><a href="#blog">Blog</a></li>
-		  <li><a href="#blog">Careers</a></li>
-		  <li><a href="#blog">Privacy Policy</a></li>
-		  <li><a href="#blog">Contact</a></li>
-		</ul>
-	  </div>
-	  <div class "bottom-column bottom-copyright">
-	    <p>--- nice RESTO image must be here --- </p>
-	    <p>© All Rights Reserved 2014.</p>		
-	    <p>Find more at <a href="http://pixelhint.com">Pixelhint.com</a></p>
-	  </div>
-       </div> 
-     </div>
+	 	<div class="clearfix">
+		  <div class="bottom-column address-NY">
+	  	    <a class="address__href" href="#NewYorkPage">New York Restaurant</a>
+			<p>3926 Anmoore Road</p>
+			<p>New York, NY 10014</p>
+			<p class="address-phone">718-749-1714</p>
+		  </div>
+	  	  <div class="bottom-column address-Paris">
+	  	    <a class="address__href" href="#ParisPage">France Restaurant</a>
+			<p>68, rue de la Couronne</p>
+			<p>75002 PARIS</p>
+			<p class="address-phone">02.94.23.69.56</p>
+		  </div>
+		  <div class="bottom-column bottom-links">
+		    <ul class="bottom__list">
+			  <li><a class="bottom__href" href="#blog">Blog</a></li>
+			  <li><a class="bottom__href" href="#careers">Careers</a></li>
+			  <li><a class="bottom__href" href="#privacy">Privacy Policy</a></li>
+			  <li><a class="bottom__href" href="#contact">Contact</a></li>
+			</ul>
+		  </div>
+		  <div class = "bottom-column bottom-copyright">
+		    <img class="logoNegetive__img" src="img/logo_negative.png" alt="Resto" width="82" height="28">
+		    <p>© All Rights Reserved 2014.</p>		
+		    <p>Find more at <a class="findmore__href" href="http://pixelhint.com">Pixelhint.com</a></p>
+		  </div>
+	     </div> 
+	   </div>  
+	</div>
   </body>
 </html>

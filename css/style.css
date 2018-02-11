@@ -1,7 +1,6 @@
 * {
 	margin:0;
-	padding:0;
-	/* Сброс настроек. не знаю почему в HTMLAcademy  этому не учили, может, считают что рано ещё...*/
+	padding:0;	
 }
 
 body {
@@ -12,8 +11,7 @@ body {
 	/*
 	aleo regular
 	aleo light
-	aleo bold
-	
+	aleo bold	
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: normal;
@@ -29,7 +27,7 @@ body {
 .container {
     width: 1220px;
     margin: 0 auto;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 .clearfix::after {
@@ -138,11 +136,10 @@ h3 {
 
 .menu-flag {
 	min-width: 1240px;
-	/* ??? надо всё равно разобраться, что это за отрывание справа...*/
+	/* ??? надо разобраться, что это за отрывание справа*/
 	padding: 0;
     margin: 0 auto;
-	position: relative;
-	/*border: 1px solid blue;*/
+	position: relative;	
 }
 
 .menu-flag-title {
@@ -168,8 +165,7 @@ h3 {
 	float: left;
 	margin-left: 120px;
 	margin-top: 40px;
-	width: 420px;
-	/*border: 1px solid blue;*/
+	width: 420px;	
 }
 
 .dish-price:before {
@@ -238,15 +234,10 @@ a:active .dish-consist {
 
 
 .slider-features {
-	margin-top: 120px;
+	margin-top: 120px;	
 }
 
-.features-header {
-	float: left;
-	margin-bottom: 40px;
-}
-
-.features-header:after {
+.section-header:after {
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
@@ -258,6 +249,7 @@ a:active .dish-consist {
 
 .slider-dots {
 	float: right;		
+	margin-top: 80px;
 }
 
 .slider-dots li {
@@ -357,11 +349,105 @@ a:active .dish-consist {
 
 
 .gallery {
-	margin-top: 120px;
+	margin-top: 540px;	
+}
+
+.gallery-images {
+	margin: 80px auto 0;
+	width: 1100px;
+	height: 430px;
+	/*переделать на флексах, чтобы по ширине ровненько растянулось*/
+}
+
+.gallery-image {
 	float: left;
 }
 
+.gallery-image-1 {
+	width: 366px;
+	height: 430px;	
+	background-image: url("../img/gallery-1.png"); 
+}
+
+.gallery-image-2 {
+	width: 367px;
+	height: 215px;	
+	background-image: url("../img/gallery-2.png"); 
+}
+
+.gallery-image-3 {
+	width: 367px;
+	height: 215px;	
+	background-image: url("../img/gallery-3.png"); 
+}
+
+.gallery-image-4 {
+	width: 367px;
+	height: 215px;	
+	background-image: url("../img/gallery-4.png"); 
+}
+
+.gallery-image-5 {
+	width: 367px;
+	height: 215px;	
+	background-image: url("../img/gallery-5.png"); 
+}
+
+.gallery-href {
+	text-decoration: none;
+	color: #000000;
+	font-size: 0px;	
+}
+
+
 .bottom {
-	margin-top: 120px;
+	margin-top: 180px;	
+	padding-top: 100px;	
+	padding-bottom: 100px;
+	background-color: #3b3b3b;	
+}
+
+
+.bottom-column {
 	float: left;
+	width: 230px;
+	margin-left: 60px;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.bottom__list {	
+	list-style: none;
+}
+
+.address-phone {	
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.address__href,
+.bottom__href,
+.findmore__href {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.address__href:hover,
+.bottom__href:hover,
+.findmore__href:hover {	
+	text-decoration: underline;
+}
+
+.address__href:visited,
+.bottom__href:visited,
+.findmore__href:visited {
+	color: #757575;
+	/*color: #b9b9b9;	*/
+}
+
+.logoNegetive__img {
+	width: 82px;
+	height: 28px;
 }
