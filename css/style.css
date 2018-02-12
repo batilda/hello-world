@@ -361,6 +361,14 @@ a:active .dish-consist {
 
 .gallery-image {
 	float: left;
+	text-decoration: none;
+	color: #000000;
+	font-size: 0px;	
+}
+
+.gallery-image:hover {
+	outline: 3px solid #ffc90e;
+	outline-offset: -3px;
 }
 
 .gallery-image-1 {
@@ -392,13 +400,6 @@ a:active .dish-consist {
 	height: 215px;	
 	background-image: url("../img/gallery-5.png"); 
 }
-
-.gallery-href {
-	text-decoration: none;
-	color: #000000;
-	font-size: 0px;	
-}
-
 
 .bottom {
 	margin-top: 180px;	
