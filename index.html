@@ -123,30 +123,36 @@
     </div>	  
     <div class="slider-features">
     	<div class="container">
-		  <h3 class="section-header">FEATURED DISHES</h3>
+		  <h3 class="section-header section_header__left">FEATURED DISHES</h3>
 		  <ul class="slider-dots">
-		  	<li class="slider-dot-1">&bull;</li>
-		  	<li class="slider-dot-2 active">&bull;</li>
-		  	<li class="slider-dot-3">&bull;</li>
-		  	<li class="slider-dot-4">&bull;</li>
+		  	<li class="sliderDot1" id="sliderDot1">&bull;</li>
+		  	<li class="sliderDot2" id="sliderDot2">&bull;</li>
+		  	<li class="sliderDot3" id="sliderDot3">&bull;</li>
+		  	<li class="sliderDot4" id="sliderDot4">&bull;</li>
 		  </ul>	
 		  <div class="feature-dishes">
-		    <div class="feature-item feat21 stars-four">		    	
-				<span class="feature-title">Fugiat nulla sint</span>
-				<span class="feature-price">$30</span>				
+		  	<div class="prevSlider prevSliderFeatureDishes" onclick="prevSliderFeatureDishes()"></div>
+		    <div class="feature-item feat21">
+		    	<img class="featImg1" id="featImg1" src="img/feat11.png" width="230px" height="200px">   	
+				<div class="feature-title stars-four">Fugiat nulla sint</div>
+				<div class="feature-price">$30</div>				
 			</div>
-	        <div class="feature-item feat22 stars-three">
-				<span class="feature-title">Daute irure dolor</span>
-				<span class="feature-price">$24</span>
+	        <div class="feature-item feat22">
+	        	<img class="featImg2" id="featImg2" src="img/feat12.png" width="230px" height="200px">
+				<div class="feature-title stars-three">Daute irure dolor</div>
+				<div class="feature-price">$24</div>
 			</div>
-		    <div class="feature-item feat23 stars-five">
-				<span class="feature-title">Officia deserunt mollit</span>
-				<span class="feature-price">$60</span>
+		    <div class="feature-item feat23">
+		    	<img class="featImg3" id="featImg3" src="img/feat13.png" width="230px" height="200px">
+				<div class="feature-title stars-five">Officia deserunt mollit</div>
+				<div class="feature-price">$60</div>
 			</div>
-	        <div class="feature-item feat24 stars-four">
-				<span class="feature-title">Pin minim veniam</span>
-				<span class="feature-price">$17</span>
+	        <div class="feature-item feat24">
+	        	<img class="featImg4" id="featImg4" src="img/feat14.png" width="230px" height="200px">
+				<div class="feature-title stars-four">Pin minim veniam</div>
+				<div class="feature-price">$17</div>
 			</div>
+			<div class="nextSlider nextSliderFeatureDishes" onclick="nextSliderFeatureDishes()"></div>
 		  </div>
 	  	</div>
 	</div>
@@ -154,15 +160,15 @@
 	  <div class="container">
 	    <h3 class="section-header">THE GALLERY</h3>
 	    <div class="gallery-images">	    	
-	    		<div class="gallery-image gallery-image-1" onclick="galleryImage1()">gallery-image-1
+	    		<div class="gallery-image gallery-image-1" onclick="galleryImage(1)">gallery-image-1
 	    		</div>		    				
-	    		<div class="gallery-image gallery-image-2" onclick="galleryImage2()">gallery-image-2
+	    		<div class="gallery-image gallery-image-2" onclick="galleryImage(2)">gallery-image-2
 	    		</div>	    	
-	    		<div class="gallery-image gallery-image-3" onclick="galleryImage3()">gallery-image-3
+	    		<div class="gallery-image gallery-image-3" onclick="galleryImage(3)">gallery-image-3
 	    		</div> 			
-	    		<div class="gallery-image gallery-image-4" onclick="galleryImage4()">gallery-image-4
+	    		<div class="gallery-image gallery-image-4" onclick="galleryImage(4)">gallery-image-4
 	    		</div>	    	
-	    		<div class="gallery-image gallery-image-5" onclick="galleryImage5()">gallery-image-5
+	    		<div class="gallery-image gallery-image-5" onclick="galleryImage(5)">gallery-image-5
 	    		</div>
         </div>
 	  </div>

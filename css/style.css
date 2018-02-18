@@ -8,26 +8,16 @@ body {
     padding: 0;
     min-width: 1240px;
     font-family: "aleo regular", "Myriad Pro", "Arial", serif;
-	/*
-	aleo regular
-	aleo light
-	aleo bold	
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: normal;
-	*/
     font-size: 16px;
     line-height: 30px;
 	font-weight: normal;
 	color: #b9b9b9;	
-    /*color: #ebebeb;	*/
     background-color: white;
 }
 
 .container {
     width: 1220px;
-    margin: 0 auto;
-	/*border: 1px solid red;*/
+    margin: 0 auto;	
 }
 
 .clearfix::after {
@@ -36,12 +26,16 @@ body {
     clear: both;
 }
 
-h3 {
+.section-header {
 	color: #3b3b3b;
 	text-transform: uppercase;
 	font-weight: normal;
-	font-size: 19px;
-	line-height: 30px;
+	font-size: 22px;
+	line-height: 60px;
+}
+
+.section_header__left {
+	float: left;
 }
 
 .headerline {  
@@ -249,81 +243,78 @@ a:active .dish-consist {
 
 .slider-dots {
 	float: right;		
-	margin-top: 80px;
+	margin-right: 42px;	
 }
 
 .slider-dots li {
 	display: inline-block;
 	float: left;	
 	list-style: none;
-	font-size: 40px;
-	line-height: 30px;
+	font-size: 60px;
+	line-height: 60px;
 	vertical-align: middle;
 	margin-left: 10px; 
 }
 
-.slider-dots .active {
-	color: #3b3b3b;
+.sliderDot1 {
+	color: #3b3b3b;	
 }
 
 .feature-dishes{
 	float: left;
+	margin-top: 80px;	
 }
+
+.prevSlider,
+.nextSlider {
+	float: left;
+	position: relative;		
+	width: 30px;
+	height: 30px;
+	margin-top: 90px;
+	border: 2px solid #b7b7b7;
+	transform: rotate(45deg);	
+}
+
+.prevSlider {
+	margin-right: 8px;	
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+
+.nextSlider {	
+	margin-left: 8px;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
+
 
 .feature-item {
 	float: left;
 	width: 230px;
-	margin-right: 100px;
-	position: relative;
+	margin-right: 72px;	
 	color: #515151;
 }
 
-.feature-item:last-child {
+.feat24 {
 	margin-right: 0;
 }
 
-.feature-item::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 230px;
-	height: 200px;
-	background-color: #78696b;
-	background-repeat: no-repeat;
-}
-
-
-.feat21::before {
-	background-image: url("../img/feat21.png");
-}
-
-.feat22::before {
-	background-image: url("../img/feat22.png");
-}
-
-.feat23::before {
-	background-image: url("../img/feat23.png");
-}
-
-.feat24::before {
-	background-image: url("../img/feat24.png");
-}
-
 .feature-title{
-	margin-top: 220px;
+	margin-top: 20px;
 	float: left;
+	position: absolute;
 }
 
 .feature-price{
-	margin-top: 220px;	
-	float: right;
+	margin-top: 20px;	
+	float: right;	
 }
 
-.feature-item::after {
+.feature-title::after {
 	content: "";
 	position: absolute;
-	top: 240px;
+	top: 30px;
 	left: -10px;
 	height: 40px;
 	width: 150px;	
@@ -349,11 +340,11 @@ a:active .dish-consist {
 
 
 .gallery {
-	margin-top: 540px;	
+	margin-top: 590px;	
 }
 
 .gallery-images {
-	margin: 80px auto 0;
+	margin: 70px auto 0;
 	width: 1100px;
 	height: 430px;
 	/*переделать на флексах, чтобы по ширине ровненько растянулось*/
