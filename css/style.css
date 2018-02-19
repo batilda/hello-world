@@ -63,7 +63,7 @@ body {
 
 .header-nav li {		
 	float: left;
-	margin-right: 50px;
+	margin-right: 40px;
 }
 
 .header-nav li:last-child {
@@ -71,10 +71,24 @@ body {
 }
 
 .header-nav a {
-    text-decoration: none;
-	font-size: 14px;	
+	text-decoration: none;
+	font-size: 16px;	
 	line-height: 38px;		
 	color: #3b3b3b;
+}
+
+.header-nav a:hover {
+	text-decoration: underline;
+}
+
+.header-nav a:active {
+	color: #000000;	
+}
+
+
+.header-nav a:visited {
+	color: #b7b7b7;
+	/*почему не работает? И - как вернуть ссылки из состояния visited?*/
 }
 
 .headerbottom {
@@ -127,32 +141,48 @@ body {
 	background: #dfdfdf;		
 }
 
+.menu-flag,
+.menu-flag-title {
+	padding: 0;
+	margin: 0 auto;
+	background-color: #f34949;
+}
 
 .menu-flag {
-	min-width: 1240px;
-	/* ??? надо разобраться, что это за отрывание справа*/
-	padding: 0;
-    margin: 0 auto;
-	position: relative;	
+	width:100%;
+	height: 4px;
 }
 
 .menu-flag-title {
-	position: absolute;
-	top: 13px;
-	left: 580px;
+	position: relative;
+	width: 155px;
+	height: 67px;
 	text-align:center;
 	vertical-align: middle;
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 20px;
+	line-height: 60px;
+}
+
+.menu-flag-title::after {
+	content: "";
+	position: absolute;
+	top: -17px;
+	left: -2px;
+	width: 0;
+	height: 0;
+	border-left: 78px solid transparent;
+	border-right: 78px solid transparent;
+	border-bottom: 156px solid #ffffff;
+	transform: scaleY(0.07);
 }
 
 
 .dishes-list {
 	padding-left: 10px;
-	float: left;	
-	/* флоат тут стоит для клеарфикса на этом же классе в html, но чертов клеарфикс все равно почему-то не срабатывает!
-	 зато срабатывает у кнопки ниже*/
-	 margin-bottom: 40px;
+	float: left;
+	margin-top: 80px;	
+	margin-bottom: 80px; /*потому что в кнопке маргин-топ выпадает*/
 }
 
 .dishes-item {

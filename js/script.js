@@ -25,16 +25,23 @@ var featImages = [
 var sliderPos = 0; // Позиции слайдера - 0,1,2,3
 var imagesInRow = 4; // 4 картинки в ряду для каждой позиции
 
-function prevSliderFeatureDishes() {    	
+function moveSliderFeatureDishes(nextSlider) {    	
 	var sliderDotOld = 'sliderDot' + (sliderPos + 1); // Этот кружок станет пассивным
 	var featImg1 = document.getElementById('featImg1');    
 	var featImg2 = document.getElementById('featImg2');    
 	var featImg3 = document.getElementById('featImg3');    
 	var featImg4 = document.getElementById('featImg4');
-	sliderPos--;
-	if(sliderPos < 0) {
-		sliderPos = imagesInRow - 1;	
-	} 
+	if (nextSlider) {
+		sliderPos++;
+		if(sliderPos >= imagesInRow) {
+			sliderPos = 0;
+		}
+	} else {
+		sliderPos--;
+		if(sliderPos < 0) {
+			sliderPos = imagesInRow - 1;
+		} 
+	}
 	featImg1.src = featImages[sliderPos * imagesInRow]; //картинки 1,5,9,13
 	featImg2.src = featImages[sliderPos * imagesInRow  + 1]; // и так далее 
 	featImg3.src = featImages[sliderPos * imagesInRow  + 2];
@@ -45,26 +52,4 @@ function prevSliderFeatureDishes() {
 	var sliderDotActive = document.getElementById(sliderDotNew);
 	sliderDotActive.style.color = '#3b3b3b';		
 }
-
-function nextSliderFeatureDishes() {	
-	var sliderDotOld = 'sliderDot' + (sliderPos + 1); // Этот кружок станет пассивным
-	var featImg1 = document.getElementById('featImg1');
-	var featImg2 = document.getElementById('featImg2');    
-	var featImg3 = document.getElementById('featImg3');    
-	var featImg4 = document.getElementById('featImg4');
-	sliderPos++;
-	if(sliderPos >= imagesInRow) {
-		sliderPos = 0;
-	}	
-	featImg1.src = featImages[sliderPos * imagesInRow ]; //картинки 1,5,9,13
-	featImg2.src = featImages[sliderPos * imagesInRow  + 1]; // и так далее 
-	featImg3.src = featImages[sliderPos * imagesInRow  + 2];
-	featImg4.src = featImages[sliderPos * imagesInRow  + 3];
-	var sliderDotNew = 'sliderDot'+ (sliderPos + 1); // Этот кружок станет активным	
-	var sliderDotPassive = document.getElementById(sliderDotOld);
-	sliderDotPassive.style.color = '#b9b9b9';	
-	var sliderDotActive = document.getElementById(sliderDotNew);
-	sliderDotActive.style.color = '#3b3b3b';	
-}
-
 

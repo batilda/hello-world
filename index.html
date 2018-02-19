@@ -10,8 +10,7 @@
   <body>
     <div class="headertop">
     	<div class="container">
-    		<div class="headerline clearfix"> <!-- перечитать как эта штука работает и осознать, почему без неё горизонтальное меню выпадает-->
-			                                  <!--http://forum.academy/t/barbershop/4955-->
+    		<div class="headerline clearfix">
 		      	<div class="header-logo">
 				  <img src="img/logo_positive.png" alt="Resto" width="82" height="28">		     		
 		      	</div>      	
@@ -34,15 +33,12 @@
 		</div>	
 	</div>	
 	<div class="menu-dishes">		
-			<div class="menu-flag">
-				<svg class="menu-flag-svg" width="100%" height="80" fill="#f34949">				
-					<polygon points="0,0 1600,0 1600,5 720,5 720,50 800,43 880,50 880,5 0,5"></polygon>
-				</svg>
+			<div class="menu-flag">				
+				<div class="menu-flag-line"></div>
 				<div class="menu-flag-title">The Menu</div>
 			</div>
 			<div class="container">			
-			<div class="dishes-list clearfix">
-				<!-- ??? почему clearfix тут не отталкивает нижнюю кнопку? -->
+			<div class="dishes-list clearfix">				
 		    	<div class="dishes-item">
 			 		<a href="#dish01">
 				  	    <span class="dish-title">Voluptate cillum fugiat.</span>
@@ -131,7 +127,7 @@
 		  	<li class="sliderDot4" id="sliderDot4">&bull;</li>
 		  </ul>	
 		  <div class="feature-dishes">
-		  	<div class="prevSlider prevSliderFeatureDishes" onclick="prevSliderFeatureDishes()"></div>
+		  	<div class="prevSlider prevSliderFeatureDishes" onclick="moveSliderFeatureDishes(false)"></div>
 		    <div class="feature-item feat21">
 		    	<img class="featImg1" id="featImg1" src="img/feat11.png" width="230px" height="200px">   	
 				<div class="feature-title stars-four">Fugiat nulla sint</div>
@@ -152,7 +148,7 @@
 				<div class="feature-title stars-four">Pin minim veniam</div>
 				<div class="feature-price">$17</div>
 			</div>
-			<div class="nextSlider nextSliderFeatureDishes" onclick="nextSliderFeatureDishes()"></div>
+			<div class="nextSlider nextSliderFeatureDishes" onclick="moveSliderFeatureDishes(true)"></div>
 		  </div>
 	  	</div>
 	</div>
