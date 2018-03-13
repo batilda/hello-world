@@ -88,7 +88,7 @@ body {
 
 .header-nav a:visited {
 	color: #b7b7b7;
-	/*почему не работает? И - как вернуть ссылки из состояния visited?*/
+	/*почему не работает? */
 }
 
 .headerbottom {
@@ -148,35 +148,24 @@ body {
 	background-color: #f34949;
 }
 
-.menu-flag {
+.menu-flag {	
 	width:100%;
 	height: 4px;
 }
 
 .menu-flag-title {
-	position: relative;
 	width: 155px;
-	height: 67px;
+	height: 75px;
+	background-color: #ffffff;
+	background-image: url("../img/menu_flag.png");
+	background-repeat: no-repeat;
+	background-position: center;
 	text-align:center;
 	vertical-align: middle;
 	color: #ffffff;
 	font-size: 20px;
 	line-height: 60px;
 }
-
-.menu-flag-title::after {
-	content: "";
-	position: absolute;
-	top: -17px;
-	left: -2px;
-	width: 0;
-	height: 0;
-	border-left: 78px solid transparent;
-	border-right: 78px solid transparent;
-	border-bottom: 156px solid #ffffff;
-	transform: scaleY(0.07);
-}
-
 
 .dishes-list {
 	padding-left: 10px;
@@ -252,8 +241,7 @@ a:active .dish-consist {
 	padding-left: 10px;
 	float: left;	
 	margin-bottom: 20px;
-	display: none;
-	/*если его и можно открыть селекторами - то надо как-то использовать селектор "следующий элемент в вёрстке"*/
+	display: none;	
  }
 
 
